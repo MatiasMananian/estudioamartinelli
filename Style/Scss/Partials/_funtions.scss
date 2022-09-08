@@ -42,12 +42,12 @@
 	}
 }
 @mixin tablet {
-	@media (max-width: 786px) {
+	@media (max-width: 768px) {
 		@content;
 	}
 }
 @mixin smartphone {
-	@media (max-width: 480px) {
+	@media only screen and (max-width: 480px) and (min-width: 300px) {
 		@content;
 	}
 }

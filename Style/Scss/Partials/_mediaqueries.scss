@@ -2,8 +2,13 @@
 /* Pagina Index */
     .contPresentacion div:nth-child(2){
         display: none;}
+ /* Pagina contacto */
+    .containerForm{
+        @include Margin_Pad(70px 30px 50px 50px,null,null,null);}
     .imgEstudio img{
-        @include Height_Width(500px,500px,null,null);}
+        @include Height_Width(380px,380px,null,5%);
+        @include Margin_Pad(50px 50px 30px 30px,null,null,null);
+        }
 }
 @include tablet {
 /* Header */
@@ -63,9 +68,10 @@
     @include Margin_Pad(250px 0 0 0, null,null,null);}
  /* Pagina contacto */
     .containerForm{
-        @include Margin_Pad(250px 0 0 30px,null,null,null);
-        .imgEstudio img{
-            display: none;}}
+        @include Margin_Pad(200px 100px 50px 100px,null,null,null);
+        @include Height_Width(400px,450px,null,null)}
+    .imgEstudio{
+        display:none;}
 }    
 @include smartphone {
 /* Header */
@@ -78,6 +84,14 @@
 /* Pagina Index */
     .asesoramientoJuridico{
         @include Margin_Pad(200px 0 0 0,null,null,null);}
+/* Pagina datos utiles */
+.blog-card-top{
+    @include Margin_Pad(250px 0 0 0, null,null,null);}
+/* Pagina contacto */
+    .containerForm{
+        @include Margin_Pad(200px 30px 80px 20px,null,null,null);
+ }
 }
+ 
 
       

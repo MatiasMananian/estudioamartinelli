@@ -110,10 +110,10 @@
 } 
 /* Pagina contacto */
 .containerForm{
-    @include Margin_Pad(80px,null,null,null);}
+    @include Margin_Pad(200px 100px 50px 200px,null,null,null);}
 .imgEstudio img{
     @include Height_Width(700px,700px,null,5%);
-    @include Margin_Pad(30px 0 30px 0,null,null,null);
+    @include Margin_Pad(50px 100px 50px 50px,null,null,null);
 }
 .btn-primary{
     @include Color(black,null,null);

@@ -265,14 +265,14 @@ footer {
 
 /* Pagina contacto */
 .containerForm {
-  margin: 80px;
+  margin: 200px 100px 50px 200px;
 }
 
 .imgEstudio img {
   height: 700px;
   width: 700px;
   border-radius: 5%;
-  margin: 30px 0 30px 0;
+  margin: 50px 100px 50px 50px;
 }
 
 .btn-primary {
@@ -289,12 +289,18 @@ footer {
   .contPresentacion div:nth-child(2) {
     display: none;
   }
+  /* Pagina contacto */
+  .containerForm {
+    margin: 70px 30px 50px 50px;
+  }
   .imgEstudio img {
-    height: 500px;
-    width: 500px;
+    height: 380px;
+    width: 380px;
+    border-radius: 5%;
+    margin: 50px 50px 30px 30px;
   }
 }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   /* Header */
   .containerHeader {
     display: none;
@@ -372,13 +378,15 @@ footer {
   }
   /* Pagina contacto */
   .containerForm {
-    margin: 250px 0 0 30px;
+    margin: 200px 100px 50px 100px;
+    height: 400px;
+    width: 450px;
   }
-  .containerForm .imgEstudio img {
+  .imgEstudio {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) and (min-width: 300px) {
   /* Header */
   .logo img {
     margin: 0 10px 0 0;
@@ -390,5 +398,13 @@ footer {
   /* Pagina Index */
   .asesoramientoJuridico {
     margin: 200px 0 0 0;
+  }
+  /* Pagina datos utiles */
+  .blog-card-top {
+    margin: 250px 0 0 0;
+  }
+  /* Pagina contacto */
+  .containerForm {
+    margin: 200px 30px 80px 20px;
   }
 }/*# sourceMappingURL=estilo.css.map */
