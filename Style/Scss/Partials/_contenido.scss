@@ -1,7 +1,7 @@
 /* Parametros contenido */
 /* Pagina Index */
 .presentacion{
-    @include Margin_Pad(30px,5px,null,null);
+    @include Margin_Pad(30px 30px 70px 30px,5px,null,null);
     @include Height_Width(null,null,30px,null);
     @include Font(m, null);
     @include Flex(null, center, justify,null);

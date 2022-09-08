@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
 <!-- CSS -->
     <link rel="stylesheet" href="../Style/Scss/estilo.css">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -118,7 +120,7 @@
             </nav>
         </div>
     </header>
-    <section class="profesionales">
+    <section data-aos="zoom-in" data-aos-duration="3000" class="profesionales">
         <h2>Dra. Andrea Veronica Martinelli</h2>
         <div class="row">
             <div class="col-lg-6 col-xl-6 col-xxl-4" >
@@ -167,7 +169,7 @@
         </ul>
     </section>    
     <section class="text-bg-dark linkRedes">
-        <div class="row">
+        <div data-aos="zoom-in" data-aos-duration="3000" class="row">
             <ul>
                 <li> 
                     <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
@@ -185,7 +187,10 @@
 
 <!-- SCRIPTS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

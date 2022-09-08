@@ -29,8 +29,6 @@ header {
 .contactoHeader {
   font-size: 20px;
   margin: 0 20px 0 auto;
-  -webkit-animation: heartbeat 1.5s ease-in-out 60s infinite both;
-  animation: heartbeat 1.5s ease-in-out 60s infinite both;
 }
 .contactoHeader p {
   display: grid;
@@ -111,66 +109,10 @@ footer {
   transition: 0.3s;
 }
 
-@-webkit-keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 /* Parametros contenido */
 /* Pagina Index */
 .presentacion {
-  margin: 30px;
+  margin: 30px 30px 70px 30px;
   padding: 5px;
   line-height: 30px;
   font-size: 30px;

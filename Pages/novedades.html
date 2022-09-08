@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
 <!-- CSS -->
     <link rel="stylesheet" href="../Style/Scss/estilo.css">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -118,13 +120,13 @@
             </nav>
         </div>
     </header>
-    <div class="row articulos">
+    <div data-aos="zoom-out-up" data-aos-duration="3000" class="row articulos">
         <img class="articulosImg img-fluid" src="../Img/bannerarticulos.jpg" alt="">
     </div>
-    <div class="row articulosTitle">    
+    <div data-aos="zoom-out-up" data-aos-duration="3000" class="row articulosTitle">    
         <span> ARTICULOS / FALLOS.</span>
     </div>
-    <section class="novedades">
+    <section data-aos="zoom-out-up" data-aos-duration="3000" class="novedades">
         <div class="fallos">
             <ul>
                 <li>
@@ -159,7 +161,7 @@
        </div>
     </section>
     <section class="text-bg-dark linkRedes">
-        <div class="row">
+        <div data-aos="zoom-out-up" data-aos-duration="3000" class="row">
             <ul>
                 <li> 
                     <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
@@ -177,6 +179,9 @@
 
 <!-- SCRIPTS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
