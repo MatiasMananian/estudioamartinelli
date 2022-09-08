@@ -1,0 +1,93 @@
+@include desktop {
+/* Pagina Index */
+    .contPresentacion div:nth-child(2){
+        display: none;
+    }
+    .imgEstudio img{
+        @include Height_Width(500px,500px,null,null);
+    }
+}
+@include tablet {
+/* Header */
+    .containerHeader{
+        display: none;}
+    .titleBig{
+        @include Font(m,null);}
+    .titleLittle{
+        @include Font(s,null);}
+/* Navbar */
+    .containerNav{
+        display: none;
+    }
+    .containerNavham{
+        display: unset;
+    }
+    .navbar-brand{
+        @include Font(null,lighter);}
+    nav a:hover{
+        @include Color($font-color-Header-Footer,#263238,null);
+        @include Font(s,lighter);
+    }
+/* Pagina index */
+    .asesoramientoJuridico{
+        @include Margin_Pad(150px 0 0 0,null,null,null);}
+    .presentacion{
+        @include Font(s,null);}
+    .enumeracion h1{
+        @include Font(m,null);}
+    .enuBox {
+        h2{
+            @include Font(m,null);}
+        ul{
+            @include Font(s,null);}                                                                                                          
+    }
+/* Pagina profesionales */
+    .profesionales{
+        @include Margin_Pad(210px 0 0 0,null,null,null);
+        img{
+            display: none;}
+        h2{
+            @include Font(m,null);} 
+        h3{
+            @include Font(s,null);}
+        li{
+            @include Font(s,null);} 
+    }
+    .ulPpal li{
+        @include Font(s,null);}
+/* Pagina novedades */
+    .articulos{
+        display: none;}
+        
+    .articulosTitle{
+        @include Margin_Pad(190px 0 50px 0,null,null,null);}
+    .fallos{
+        @include Margin_Pad(20px 0 0 0,null,null,null);
+            a{
+                @include Font(l,null);}
+            ul{
+                @include Font(s,null);}     
+    } 
+/* Pagina datos utiles */
+.blog-card-top{
+    @include Margin_Pad(250px 0 0 0, null,null,null);
+}
+ /* Pagina contacto */
+    .containerForm{
+        @include Margin_Pad(250px,null,null,null);}
+    .imgEstudio img{
+        display: none;}
+}    
+@include smartphone {
+/* Header */
+    .logo img{
+        @include Margin_Pad(0 10px 0 0,null,null,null);
+        @include Height_Width(80px,null,null,null);
+    }
+    .contactoHeader {
+        @include Font(xs,null);}
+/* Pagina Index */
+    .asesoramientoJuridico{
+        @include Margin_Pad(200px 0 0 0,null,null,null);}
+}
+    

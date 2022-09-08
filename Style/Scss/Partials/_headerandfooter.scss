@@ -1,0 +1,106 @@
+/* Parametros header */
+header {
+    @include Color($font-color-Header-Footer,$bg-Header-Footer,null);
+}
+.containerHeader{
+    @include Margin_Pad(null,30px 0 30px 0,null,null);
+} 
+.contactoHeader {
+	@include Font(s,null);
+	@include Margin_Pad(0 20px 0 auto,null,null,null);
+	-webkit-animation: rotate-in-hor 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+	        animation: rotate-in-hor 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+    p{
+        display: grid;
+        place-content: flex-end;}
+}
+.logo{
+    @include Flex(null,center,null,null);
+    img{
+        @include Height_Width(100px,null,null,null);
+        @include Margin_Pad(0 10px 0 0,null,null,null);
+        }
+}
+.titleHeader{
+    @include Color($font-color-Header-Footer,null,null);
+    @include Font(null,bold);
+    .titleBig{
+        @include Height_Width(null,null,45px,null);
+        @include Font(xl,null);
+    }
+    .titleLittle{
+        @include Font(s,null);
+    }
+}
+/* Parametros menu */
+.containerNavham{
+    display: none;
+}
+.containerNav{
+    @include Height_Width(50px,null,null,null);}
+nav{ 
+    a{
+        @include Font(null,bold);
+        @include Color(white,null,null);
+        &:hover{
+            @include Hoover();
+            @include Font(s,bold);
+            @include Margin_Pad(null,12px,null,null);
+            @include Color(black,white,null);
+        }
+    }
+}
+/* Footer */
+footer{
+    display: grid;
+    place-content: center;
+    @include Color(null,#2a2a2a,null);
+}
+/* Pagina link redes sociales */
+.linkRedes{
+    @include Color(null,#2a2a2a,null);
+    @include Height_Width(100px,null,null,null);
+        ul{
+            @include Margin_Pad(0,40px,null,null)}
+        li{
+            @include Flex(center,null,null,null);}
+        a{
+            @include Font(m,null);
+            @include Margin_Pad(0 0 20px 20px,null,null,null);
+            @include Color(white,null,null);
+            &:hover{
+                @include Hoover();
+            }
+        }
+} 
+// Keyframes para animacion contacto
+@-webkit-keyframes rotate-in-hor {
+    0% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      opacity: 1;
+    }
+}
+@keyframes rotate-in-hor {
+    0% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      opacity: 1;
+    }
+}
+  
+
+
+
+
+  

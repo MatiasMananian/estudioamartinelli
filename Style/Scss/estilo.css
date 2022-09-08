@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Parametros header */
+header {
+  color: white;
+  background-color: #2a2a2a;
+}
+
+.containerHeader {
+  padding: 30px 0 30px 0;
+}
+
+.contactoHeader {
+  font-size: 20px;
+  margin: 0 20px 0 auto;
+  -webkit-animation: rotate-in-hor 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation: rotate-in-hor 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+.contactoHeader p {
+  display: grid;
+  place-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin: 0 10px 0 0;
+}
+
+.titleHeader {
+  color: white;
+  font-weight: bold;
+}
+.titleHeader .titleBig {
+  line-height: 45px;
+  font-size: 50px;
+}
+.titleHeader .titleLittle {
+  font-size: 20px;
+}
+
+/* Parametros menu */
+.containerNavham {
+  display: none;
+}
+
+.containerNav {
+  height: 50px;
+}
+
+nav a {
+  font-weight: bold;
+  color: white;
+}
+nav a:hover {
+  transform: translateY(-3px) scale(1.1);
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  color: black;
+  background-color: white;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  place-content: center;
+  background-color: #2a2a2a;
+}
+
+/* Pagina link redes sociales */
+.linkRedes {
+  background-color: #2a2a2a;
+  height: 100px;
+}
+.linkRedes ul {
+  margin: 0;
+  padding: 40px;
+}
+.linkRedes li {
+  display: flex;
+  justify-content: center;
+}
+.linkRedes a {
+  font-size: 30px;
+  margin: 0 0 20px 20px;
+  color: white;
+}
+.linkRedes a:hover {
+  transform: translateY(-3px) scale(1.1);
+  transition: 0.3s;
+}
+
+@-webkit-keyframes rotate-in-hor {
+  0% {
+    transform: rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-hor {
+  0% {
+    transform: rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+/* Parametros contenido */
+/* Pagina Index */
+.presentacion {
+  margin: 30px;
+  padding: 5px;
+  line-height: 30px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.asesoramientoJuridico img {
+  margin: 0 50px 0 30px;
+  padding: 10px;
+  height: 600px;
+  width: 800px;
+  border-radius: 5%;
+}
+
+.enumeracion h1 {
+  margin: 0 0 10px 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.containerEnu {
+  padding: 50px;
+  gap: 100px;
+}
+.containerEnu h2 {
+  font-size: 50px;
+}
+.containerEnu ul {
+  font-size: 30px;
+}
+
+/* Pagina Profesionales */
+.profesionales img {
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+  margin: 0 100px 0 0;
+  float: right;
+}
+.profesionales h2 {
+  font-size: 45px;
+  margin: 20px 0 30px 20px;
+}
+.profesionales h3 {
+  font-size: 30px;
+  margin: 40px 0 10px 20px;
+}
+.profesionales li {
+  font-size: 20px;
+  margin: 3px 0 0 30px;
+}
+
+.ulPpal li {
+  font-size: 30px;
+  margin: 7px 0 0 20px;
+}
+
+/* Pagina novedades*/
+.articulosImg {
+  display: grid;
+}
+
+.articulosTitle {
+  margin: 20px 0 20px 0;
+}
+.articulosTitle span {
+  font-size: 45px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.fallos {
+  margin: 0 0 0 20px;
+}
+.fallos a {
+  margin: 0 0 0 40px;
+  font-size: 20px;
+}
+.fallos a:hover {
+  color: #f66009;
+}
+.fallos ul {
+  margin: 0 0 40px 0;
+  font-size: 30px;
+}
+.fallos li {
+  margin: 0 0 0 30px;
+}
+.fallos span {
+  display: block;
+}
+
+/* Pagina datos utiles*/
+.blog-card-blog {
+  margin: 100px 0 0 0;
+}
+.blog-card-blog .blog-card-caption {
+  margin: 5px;
+}
+
+.blog-card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border-radius: 5%;
+  margin: 100px 0 100px 0;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.blog-card .blog-card-image {
+  height: 60%;
+  border-radius: 5%;
+  margin: -30px 15px 0 15px;
+  overflow: hidden;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.blog-card .blog-card-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  pointer-events: none;
+}
+.blog-card .blog-table {
+  margin: 15px 30px;
+  padding: 0 0 0 0;
+}
+
+.blog-category {
+  position: relative;
+  line-height: 0;
+  margin: 15px 0;
+}
+
+.blog-text-success {
+  color: #f66009 !important;
+}
+
+.blog-card-caption {
+  font-weight: 700;
+}
+.blog-card-caption .blog-card-caption a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Pagina contacto */
+.containerForm {
+  margin: 80px;
+}
+
+.imgEstudio img {
+  height: 700px;
+  width: 700px;
+  border-radius: 5%;
+  margin: 30px 0 30px 0;
+}
+
+.btn-primary {
+  color: black;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(12deg, #FBAB7E 1%, #F7CE68 5%, #9a7d7d 100%);
+}
+
+@media (max-width: 1500px) {
+  /* Pagina Index */
+  .contPresentacion div:nth-child(2) {
+    display: none;
+  }
+  .imgEstudio img {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media (max-width: 786px) {
+  /* Header */
+  .containerHeader {
+    display: none;
+  }
+  .titleBig {
+    font-size: 30px;
+  }
+  .titleLittle {
+    font-size: 20px;
+  }
+  /* Navbar */
+  .containerNav {
+    display: none;
+  }
+  .containerNavham {
+    display: unset;
+  }
+  .navbar-brand {
+    font-weight: lighter;
+  }
+  nav a:hover {
+    color: white;
+    background-color: #263238;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  /* Pagina index */
+  .asesoramientoJuridico {
+    margin: 150px 0 0 0;
+  }
+  .presentacion {
+    font-size: 20px;
+  }
+  .enumeracion h1 {
+    font-size: 30px;
+  }
+  .enuBox h2 {
+    font-size: 30px;
+  }
+  .enuBox ul {
+    font-size: 20px;
+  }
+  /* Pagina profesionales */
+  .profesionales {
+    margin: 210px 0 0 0;
+  }
+  .profesionales img {
+    display: none;
+  }
+  .profesionales h2 {
+    font-size: 30px;
+  }
+  .profesionales h3 {
+    font-size: 20px;
+  }
+  .profesionales li {
+    font-size: 20px;
+  }
+  .ulPpal li {
+    font-size: 20px;
+  }
+  /* Pagina novedades */
+  .articulos {
+    display: none;
+  }
+  .articulosTitle {
+    margin: 190px 0 50px 0;
+  }
+  .fallos {
+    margin: 20px 0 0 0;
+  }
+  .fallos a {
+    font-size: 45px;
+  }
+  .fallos ul {
+    font-size: 20px;
+  }
+  /* Pagina datos utiles */
+  .blog-card-top {
+    margin: 250px 0 0 0;
+  }
+  /* Pagina contacto */
+  .containerForm {
+    margin: 250px;
+  }
+  .imgEstudio img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* Header */
+  .logo img {
+    margin: 0 10px 0 0;
+    height: 80px;
+  }
+  .contactoHeader {
+    font-size: 15px;
+  }
+  /* Pagina Index */
+  .asesoramientoJuridico {
+    margin: 200px 0 0 0;
+  }
+}/*# sourceMappingURL=estilo.css.map */

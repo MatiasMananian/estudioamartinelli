@@ -1,0 +1,55 @@
+// Height y Width
+@mixin Height_Width($height, $width, $line-height, $border-radius){
+	height: $height;
+	width: $width;
+	line-height: $line-height;
+	border-radius:$border-radius;
+}
+// Font
+@mixin Font($fsize, $font-weight){
+	font-size: map-get($font-size,$fsize);
+	font-weight: $font-weight;
+}
+@mixin Color($color,$background-color,$background-image){
+	color:$color;
+	background-color: $background-color;
+	background-image: $background-image;	
+}
+// Padding y margin
+@mixin Margin_Pad($margin, $padding, $gap, $float){
+	margin: $margin;
+	padding: $padding;
+	gap: $gap;
+	float: $float;	
+}
+// Flexbox
+@mixin Flex($justify, $alignitems, $textalign,$flex-direction){
+	display:flex;
+	justify-content: $justify;
+	align-items: $alignitems;
+	text-align: $textalign;
+	flex-direction: $flex-direction;
+}
+//Hoover
+@mixin Hoover(){
+	transform: translateY(-3px) scale(1.10);
+	transition: 0.3s;
+}
+// Media queries
+@mixin desktop {
+	@media (max-width: 1500px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media (max-width: 786px) {
+		@content;
+	}
+}
+@mixin smartphone {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+

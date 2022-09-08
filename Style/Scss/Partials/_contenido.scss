@@ -1,0 +1,125 @@
+/* Parametros contenido */
+/* Pagina Index */
+.presentacion{
+    @include Margin_Pad(30px,5px,null,null);
+    @include Height_Width(null,null,30px,null);
+    @include Font(m, null);
+    @include Flex(null, center, justify,null);
+}
+.asesoramientoJuridico img{
+    @include Margin_Pad(0 50px 0 30px,10px,null,null);
+    @include Height_Width(600px,800px,null,5%);
+
+}
+.enumeracion h1{
+    @include Margin_Pad(0 0 10px 20px,null,null,null);
+    @include Font(xl,null);
+    @include Flex(center, null, null,null);
+}
+.containerEnu{
+    @include Margin_Pad(null,50px,100px,null);
+    h2{
+        @include Font(xl,null);}
+    ul{
+        @include Font(m,null);}
+}
+/* Pagina Profesionales */
+.profesionales {
+    img{
+        @include Height_Width(300px,300px,null,5%);
+        @include Margin_Pad(0 100px 0 0,null,null,right);}
+    h2{
+        @include Font(l,null);
+        @include Margin_Pad(20px 0 30px 20px,null,null,null);}
+    h3{
+        @include Font(m,null);
+        @include Margin_Pad( 40px 0 10px 20px,null,null,null);}
+    li{
+        @include Font(s,null);
+        @include Margin_Pad(3px 0 0 30px,null,null,null);}
+}
+.ulPpal li{
+    @include Font(m,null);
+    @include Margin_Pad(7px 0 0 20px,null,null,null);}
+/* Pagina novedades*/
+.articulosImg{
+    display: grid;}
+.articulosTitle{ 
+    @include Margin_Pad(20px 0 20px 0,null,null,null);
+    span{
+        @include Font(l,bold);
+        @include Flex(center,null,null,null);
+    }
+}
+.fallos{
+    @include Margin_Pad(0 0 0 20px,null,null,null);
+    a{
+        @include Margin_Pad(0 0 0 40px,null,null,null);
+        @include Font(s,null);
+        &:hover{
+            @include Color(#f66009,null,null);}
+    }
+    ul{
+        @include Margin_Pad(0 0 40px 0,null,null,null);
+        @include Font(m,null);}
+    li{
+        @include Margin_Pad(0 0 0 30px,null,null,null);}
+    span{
+        display: block;}
+}
+/* Pagina datos utiles*/
+.blog-card-blog {
+    @include Margin_Pad(100px 0 0 0,null,null,null);
+    .blog-card-caption {
+        @include Margin_Pad(5px,null,null,null);}
+}
+.blog-card {
+    display: inline-block;
+    position: relative;
+    @include Height_Width(null,100%,null,5%);
+    @include Margin_Pad(100px 0 100px 0,null,null,null);
+    @include Color( rgba(0, 0, 0, 0.87), #fff,null);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      .blog-card-image {
+        @include Height_Width(60%,null,null,5%);
+        @include Margin_Pad(-30px 15px 0 15px,null,null,null);
+        overflow: hidden;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+.blog-card-image img {
+    @include Height_Width(100%,100%,null,5%);
+    pointer-events: none;
+}
+.blog-table {
+    @include Margin_Pad(15px 30px,0 0 0 0,null,null);}
+}
+.blog-category {
+    position: relative;
+    @include Height_Width(null,null,0,null);
+    @include Margin_Pad(15px 0,null,null,null);
+}
+.blog-text-success {
+    @include Color(#f66009!important,null,null);
+}
+.blog-card-caption {
+    @include Font(null,700);
+    .blog-card-caption a {
+        @include Color(#333,null,null);
+        text-decoration: none;
+    }
+} 
+/* Pagina contacto */
+.containerForm{
+    @include Margin_Pad(80px,null,null,null);}
+.imgEstudio img{
+    @include Height_Width(700px,700px,null,5%);
+    @include Margin_Pad(30px 0 30px 0,null,null,null);
+}
+.btn-primary{
+    @include Color(black,null,null);
+    &:hover{
+        @include Color(white,#FBAB7E,linear-gradient(12deg, #FBAB7E 1%, #F7CE68 5%, #9a7d7d 100%));
+    }
+}
+
+              
