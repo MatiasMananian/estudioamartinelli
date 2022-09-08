@@ -366,21 +366,15 @@ footer {
   .fallos {
     margin: 20px 0 0 0;
   }
-  .fallos a {
-    font-size: 45px;
-  }
-  .fallos ul {
-    font-size: 20px;
-  }
   /* Pagina datos utiles */
   .blog-card-top {
     margin: 250px 0 0 0;
   }
   /* Pagina contacto */
   .containerForm {
-    margin: 250px;
+    margin: 250px 0 0 30px;
   }
-  .imgEstudio img {
+  .containerForm .imgEstudio img {
     display: none;
   }
 }

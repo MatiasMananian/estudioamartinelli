@@ -1,11 +1,9 @@
 @include desktop {
 /* Pagina Index */
     .contPresentacion div:nth-child(2){
-        display: none;
-    }
+        display: none;}
     .imgEstudio img{
-        @include Height_Width(500px,500px,null,null);
-    }
+        @include Height_Width(500px,500px,null,null);}
 }
 @include tablet {
 /* Header */
@@ -17,11 +15,9 @@
         @include Font(s,null);}
 /* Navbar */
     .containerNav{
-        display: none;
-    }
+        display: none;}
     .containerNavham{
-        display: unset;
-    }
+        display: unset;}
     .navbar-brand{
         @include Font(null,lighter);}
     nav a:hover{
@@ -57,26 +53,19 @@
         @include Font(s,null);}
 /* Pagina novedades */
     .articulos{
-        display: none;}
-        
+        display: none;}     
     .articulosTitle{
         @include Margin_Pad(190px 0 50px 0,null,null,null);}
     .fallos{
-        @include Margin_Pad(20px 0 0 0,null,null,null);
-            a{
-                @include Font(l,null);}
-            ul{
-                @include Font(s,null);}     
-    } 
+        @include Margin_Pad(20px 0 0 0,null,null,null);} 
 /* Pagina datos utiles */
 .blog-card-top{
-    @include Margin_Pad(250px 0 0 0, null,null,null);
-}
+    @include Margin_Pad(250px 0 0 0, null,null,null);}
  /* Pagina contacto */
     .containerForm{
-        @include Margin_Pad(250px,null,null,null);}
-    .imgEstudio img{
-        display: none;}
+        @include Margin_Pad(250px 0 0 30px,null,null,null);
+        .imgEstudio img{
+            display: none;}}
 }    
 @include smartphone {
 /* Header */
@@ -90,4 +79,5 @@
     .asesoramientoJuridico{
         @include Margin_Pad(200px 0 0 0,null,null,null);}
 }
-    
+
+      
