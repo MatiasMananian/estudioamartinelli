@@ -12,8 +12,7 @@ body a {
   color: black;
 }
 body li {
-  list-style: none;
-  list-style-type: none;
+  list-style: none none;
 }
 
 /* Parametros header */
@@ -394,6 +393,9 @@ footer {
   }
   .contactoHeader {
     font-size: 15px;
+  }
+  .containerNavham {
+    --bs-navbar-toggler-transition:none;
   }
   /* Pagina Index */
   .asesoramientoJuridico {
